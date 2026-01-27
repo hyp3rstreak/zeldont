@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://tf2jfxsyvvnq"]
+
+[ext_resource type="Script" uid="uid://pv3iflucfxev" path="res://scripts/game.gd" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://pqsj5pm5cigw" path="res://scenes/player.tscn" id="2_yqjtg"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_uwrxv")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_yqjtg")]
+position = Vector2(72, 10)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
