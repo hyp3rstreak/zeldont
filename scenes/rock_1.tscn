@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dalnsa2tsu82b"]
+
+[ext_resource type="Texture2D" uid="uid://cquwjtm8uh71v" path="res://assests/summer-top-down-vector-tileset/PNG/Top-Down Simple Summer_Prop - Rock 01.png" id="1_yitr1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5yrgr"]
+radius = 37.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yitr1"]
+radius = 29.0
+
+[node name="rock1" type="Node2D"]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yitr1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(12, 5)
+shape = SubResource("CircleShape2D_5yrgr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(12, -12)
+shape = SubResource("CircleShape2D_yitr1")

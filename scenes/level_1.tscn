@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=4 uid="uid://b0go717fuyb3e"]
+
+[ext_resource type="TileSet" uid="uid://cjopr8i4q3g0y" path="res://assests/tilesets/level_1.tres" id="1_014kd"]
+
+[node name="level_1" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////JQAAAAAAAAAPAP//KgAAAAAAAAD//+//JAAAAAAAAAAPAO//KgAAAAAAAADv/+//KgAAAAAAAADv////KgAAAAAAAADv/w8AKgAAAAAAAAD//w8AJgAAAAAAAAAPAA8AKgAAAAAAAAAAAA8AJgAAAAAAAAAfAO//KgAAAAAAAAAfAP//KgAAAAAAAAAfAA8AKgAAAAAAAADf/+//KgAAAAAAAADf////KgAAAAAAAADf/w8AKgAAAAAAAADf/x8AKgAAAAAAAAAfAB8AKgAAAAAAAADv/x8AKgAAAAAAAAD//x8AKgAAAAAAAAAPAB8AKgAAAAAAAADf/9//KgAAAAAAAADv/9//KgAAAAAAAAD//9//KgAAAAAAAAAPAN//KgAAAAAAAAAfAN//KgAAAAAAAAA=")
+tile_set = ExtResource("1_014kd")
