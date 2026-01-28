@@ -1,9 +1,31 @@
-[gd_scene load_steps=2 format=4 uid="uid://b0go717fuyb3e"]
+[gd_scene load_steps=3 format=4 uid="uid://b0go717fuyb3e"]
 
 [ext_resource type="TileSet" uid="uid://cjopr8i4q3g0y" path="res://assests/tilesets/level_1.tres" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://dalnsa2tsu82b" path="res://scenes/rock_1.tscn" id="2_bswci"]
 
 [node name="level_1" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD/////JQAAAAAAAAAPAP//KgAAAAAAAAD//+//JAAAAAAAAAAPAO//KgAAAAAAAADv/+//KgAAAAAAAADv////KgAAAAAAAADv/w8AKgAAAAAAAAD//w8AJgAAAAAAAAAPAA8AKgAAAAAAAAAAAA8AJgAAAAAAAAAfAO//KgAAAAAAAAAfAP//KgAAAAAAAAAfAA8AKgAAAAAAAADf/+//KgAAAAAAAADf////KgAAAAAAAADf/w8AKgAAAAAAAADf/x8AKgAAAAAAAAAfAB8AKgAAAAAAAADv/x8AKgAAAAAAAAD//x8AKgAAAAAAAAAPAB8AKgAAAAAAAADf/9//KgAAAAAAAADv/9//KgAAAAAAAAD//9//KgAAAAAAAAAPAN//KgAAAAAAAAAfAN//KgAAAAAAAAA=")
 tile_set = ExtResource("1_014kd")
+
+[node name="rock1" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(-206, 131)
+
+[node name="rock2" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(-589, 150)
+
+[node name="rock3" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(-366, 277)
+
+[node name="rock4" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(76, -44)
+
+[node name="rock5" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(399, -109)
+
+[node name="rock6" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(-369, -93)
+
+[node name="rock7" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(-19, 272)

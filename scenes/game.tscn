@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://tf2jfxsyvvnq"]
+[gd_scene load_steps=4 format=3 uid="uid://tf2jfxsyvvnq"]
 
 [ext_resource type="Script" uid="uid://pv3iflucfxev" path="res://scripts/game.gd" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://b0go717fuyb3e" path="res://scenes/level_1.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://pqsj5pm5cigw" path="res://scenes/player.tscn" id="2_yqjtg"]
-[ext_resource type="PackedScene" uid="uid://dalnsa2tsu82b" path="res://scenes/rock_1.tscn" id="3_lbhrr"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_uwrxv")
@@ -11,18 +10,6 @@ script = ExtResource("1_uwrxv")
 [node name="level_1" parent="." instance=ExtResource("2_lnu2h")]
 y_sort_enabled = true
 position = Vector2(2, 1)
-
-[node name="rock1" parent="level_1" instance=ExtResource("3_lbhrr")]
-position = Vector2(105, -121)
-
-[node name="rock2" parent="level_1" instance=ExtResource("3_lbhrr")]
-position = Vector2(107, 11)
-
-[node name="rock3" parent="level_1" instance=ExtResource("3_lbhrr")]
-position = Vector2(197, -129)
-
-[node name="rock4" parent="level_1" instance=ExtResource("3_lbhrr")]
-position = Vector2(203, 14)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_yqjtg")]
 z_index = 1
